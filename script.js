@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createEmotes() {
         const emoteTypes = ['❤️', '🌹'];
-        for (let i = 10; i < 10000; i++) {
+        for (let i = 15; i < 100000; i++) {
             setTimeout(() => {
                 const emote = document.createElement('div');
                 const emoteType = emoteTypes[Math.floor(Math.random() * emoteTypes.length)];
                 emote.classList.add(emoteType === '❤️' ? 'heart' : 'rose');
                 emote.innerHTML = emoteType;
-                emote.style.left = Math.random() * 350 + 'px';
+                emote.style.left = Math.random() * 450 + 'px';
                 emotesContainer.appendChild(emote);
 
                 setTimeout(() => {
