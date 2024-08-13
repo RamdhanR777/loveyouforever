@@ -1,0 +1,58 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial, sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.love-message {
+    font-size: 2em;
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2em;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+#revealButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #d63384;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#revealButton:hover {
+    background-color: #c12775;
+}
+
+.hidden-message {
+    font-size: 1.2em;
+    color: #343a40;
+    margin-top: 20px;
+    display: none;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
