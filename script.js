@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createEmotes() {
         const emoteTypes = ['❤️', '🌹'];
-        for (let i = 15; i < 100000; i++) {
+        for (let i = 12; i < 100000; i++) {
             setTimeout(() => {
                 const emote = document.createElement('div');
                 const emoteType = emoteTypes[Math.floor(Math.random() * emoteTypes.length)];
